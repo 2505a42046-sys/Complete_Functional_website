@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main class="shell">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">CLASSROOM CONTROL CENTER</p>
+                <h1>Student <em>Manager</em></h1>
+                <p class="subtitle">Keep every learner, mark, and report in one calm place.</p>
+            </div>
+            <div class="hero-mark">✦</div>
+        </header>
+        <section class="metrics">
+            <article><span>Total students</span><strong id="totalMetric">0</strong></article>
+            <article><span>Class average</span><strong id="averageMetric">0%</strong></article>
+            <article><span>Top mark</span><strong id="topMetric">0%</strong></article>
+            <article><span>Passing</span><strong id="passingMetric">0</strong></article>
+        </section>
+        <div class="workspace">
+            <nav class="menu">
+                <p class="menu-label">Workspace</p><button class="nav-button active" data-view="add">01 <span>Add
+                        Student</span></button><button class="nav-button" data-view="display">02 <span>Display
+                        Students</span></button><button class="nav-button" data-view="search">03 <span>Search
+                        Student</span></button><button class="nav-button" data-view="update">04 <span>Update
+                        Student</span></button><button class="nav-button" data-view="delete">05 <span>Delete
+                        Student</span></button><button class="nav-button" data-view="grade">06 <span>Calculate
+                        Grade</span></button><button class="nav-button" data-view="save">07 <span>Save to
+                        CSV</span></button><button class="nav-button" data-view="load">08 <span>Load
+                        CSV</span></button><button class="nav-button" data-view="reports">09
+                    <span>Reports</span></button><button class="nav-button exit-link" data-view="exit">10
+                    <span>Exit</span></button>
+            </nav>
+            <section class="content" id="content" aria-live="polite"></section>
+        </div>
+        <div id="toast" class="toast" role="status"></div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+
+</html>
